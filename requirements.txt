@@ -1,0 +1,8 @@
+adk-python
+gemini-sdk
+faiss-cpu
+pandas
+numpy
+PyPDF2
+tqdm
+notebook
