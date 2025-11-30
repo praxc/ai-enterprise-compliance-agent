@@ -1,4 +1,4 @@
-# AI Enterprise Compliance Copilot 🚀
+# AI Enterprise Compliance Agent 🚀
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python Version](https://img.shields.io/badge/python-3.10+-blue)](https://www.python.org/)
