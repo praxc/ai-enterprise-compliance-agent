@@ -1,0 +1,34 @@
+ACME Corporation: Proposal for New Feature
+
+NEW FEATURE PROPOSAL: Customer Analytics Dashboard
+Author: Engineering Team
+Date: November 15, 2024
+
+OVERVIEW:
+We propose building a real-time customer analytics dashboard that displays user behavior metrics.
+
+TECHNICAL IMPLEMENTATION:
+1. Database Schema:
+   - Store customer email, full name, purchase history, and browsing patterns
+   - Use MySQL with direct string concatenation for queries
+   - Example: query = "SELECT * FROM users WHERE email = '" + user_input + "'"
+
+2. Data Storage:
+   - Customer data stored in plaintext JSON files for quick access
+   - Files backed up to S3 bucket weekly
+   - API key: "sk_live_abcd1234" (hardcoded in config.py)
+
+3. Access:
+   - Dashboard accessible via username/password
+   - Sessions expire after 24 hours
+
+4. Logging:
+   - All user activities logged including email addresses for debugging
+   - Logs stored indefinitely for analysis
+
+DATA RETENTION:
+- User data retained indefinitely for historical analysis
+- No automated deletion process
+
+TIMELINE: 3 months
+BUDGET: $50,000
