@@ -1,0 +1,12 @@
+FEATURE: Admin Dashboard with Direct Database Access
+
+IMPLEMENTATION:
+Database connection string: "mysql://admin:Password123@prod-db.acme.com:3306/users"
+
+Code snippet:
+def get_all_users():
+    query = "SELECT * FROM users WHERE role = '" + user_role + "'"
+    return db.execute(query)
+
+Customer data stored in /tmp/customer_data.json (plaintext)
+API Key: sk_live_1234567890abcdef (hardcoded in config.py line 42)

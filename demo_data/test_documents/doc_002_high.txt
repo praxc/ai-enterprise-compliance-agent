@@ -1,0 +1,10 @@
+FEATURE: Customer Portal Authentication
+
+AUTHENTICATION:
+- Username/password only (no MFA)
+- Sessions expire after 7 days
+- Logging: All failed login attempts logged with email addresses
+
+DATA HANDLING:
+Customer PII retention: indefinite (never deleted)
+Error messages include full stack traces with customer emails

@@ -1,0 +1,18 @@
+FEATURE: Analytics Dashboard (Compliant Version)
+
+SECURITY:
+- All data encrypted at rest using AES-256
+- TLS 1.3 for all network communication
+- MFA required for all access
+- Parameterized queries for all database operations
+
+DATA HANDLING:
+- Customer data classified as Restricted
+- Automated deletion within 30 days of account closure
+- API keys stored in AWS Secrets Manager
+- Keys rotated every 90 days automatically
+
+LOGGING:
+- No PII in logs
+- Error messages sanitized
+- Audit logs retained for compliance

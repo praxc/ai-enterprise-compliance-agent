@@ -3,6 +3,23 @@ gemini-sdk
 faiss-cpu
 pandas
 numpy
-PyPDF2
 tqdm
 notebook
+
+# Core dependencies
+google-adk>=0.1.0
+google-generativeai>=0.8.0
+
+# PDF processing
+PyPDF2>=3.0.0
+
+# Jupyter notebooks
+jupyter>=1.0.0
+ipykernel>=6.0.0
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+
+# Utilities
+python-dotenv>=1.0.0

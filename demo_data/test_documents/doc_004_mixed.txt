@@ -1,0 +1,11 @@
+FEATURE: Payment Processing
+
+DATABASE:
+Payment data stored unencrypted in MongoDB
+Connection: db.connect("mongodb://localhost:27017", password="PaymentPass2024")
+
+API:
+Stripe API key: sk_test_abcdefghijklmnop (in source code)
+
+ACCESS:
+No MFA required for payment admin panel

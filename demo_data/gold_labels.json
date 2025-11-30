@@ -1,0 +1,45 @@
+{
+  "doc_001_critical.txt": {
+    "expected_violations": [
+      {"severity": "CRITICAL", "type": "hardcoded_credential", "description": "Hardcoded database password"},
+      {"severity": "CRITICAL", "type": "hardcoded_credential", "description": "Hardcoded API key"},
+      {"severity": "CRITICAL", "type": "sql_injection", "description": "String concatenation in SQL query"},
+      {"severity": "CRITICAL", "type": "unencrypted_pii", "description": "Plaintext customer data storage"}
+    ],
+    "total_violations": 4,
+    "expected_severity_counts": {"CRITICAL": 4, "HIGH": 0, "MEDIUM": 0, "LOW": 0}
+  },
+  "doc_002_high.txt": {
+    "expected_violations": [
+      {"severity": "HIGH", "type": "missing_mfa", "description": "No MFA for authentication"},
+      {"severity": "HIGH", "type": "pii_in_logs", "description": "Email addresses in logs"},
+      {"severity": "HIGH", "type": "non_compliant_retention", "description": "Indefinite data retention"},
+      {"severity": "HIGH", "type": "excessive_error_details", "description": "PII in error messages"}
+    ],
+    "total_violations": 4,
+    "expected_severity_counts": {"CRITICAL": 0, "HIGH": 4, "MEDIUM": 0, "LOW": 0}
+  },
+  "doc_003_medium.txt": {
+    "expected_violations": [
+      {"severity": "MEDIUM", "type": "expired_credentials", "description": "API keys not rotated (>90 days)"},
+      {"severity": "MEDIUM", "type": "incomplete_reviews", "description": "Access reviews not quarterly"}
+    ],
+    "total_violations": 2,
+    "expected_severity_counts": {"CRITICAL": 0, "HIGH": 0, "MEDIUM": 2, "LOW": 0}
+  },
+  "doc_004_mixed.txt": {
+    "expected_violations": [
+      {"severity": "CRITICAL", "type": "unencrypted_pii", "description": "Unencrypted payment data"},
+      {"severity": "CRITICAL", "type": "hardcoded_credential", "description": "Hardcoded database password"},
+      {"severity": "CRITICAL", "type": "hardcoded_credential", "description": "Hardcoded Stripe API key"},
+      {"severity": "HIGH", "type": "missing_mfa", "description": "No MFA for admin panel"}
+    ],
+    "total_violations": 4,
+    "expected_severity_counts": {"CRITICAL": 3, "HIGH": 1, "MEDIUM": 0, "LOW": 0}
+  },
+  "doc_005_clean.txt": {
+    "expected_violations": [],
+    "total_violations": 0,
+    "expected_severity_counts": {"CRITICAL": 0, "HIGH": 0, "MEDIUM": 0, "LOW": 0}
+  }
+}
