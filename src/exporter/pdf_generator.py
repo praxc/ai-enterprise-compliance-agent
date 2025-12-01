@@ -3,6 +3,16 @@ from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 
 def export_to_pdf(results, output_path):
+    """
+    Generates a compliance report PDF from the given results.
+
+    Args:
+        results (dict): Dictionary containing 'total_violations' (int) and 'violations' (dict of lists).
+        output_path (str): Path to save the generated PDF file.
+
+    Returns:
+        None
+    """
     doc = SimpleDocTemplate(output_path, pagesize=A4)
     styles = getSampleStyleSheet()
     elements = []
