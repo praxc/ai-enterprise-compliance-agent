@@ -83,13 +83,13 @@ export GOOGLE_API_KEY="your-api-key-here"
 
 **Option 1: Kaggle Notebook (Easiest)**
 
-1. Open the [Kaggle Demo](https://www.kaggle.com/your-notebook-link)
+1. Open the [Kaggle Demo](https://www.kaggle.com/code/praxc/ai-enterprise-compliance-agent)
 2. Add `GOOGLE_API_KEY` to Kaggle Secrets
 3. Run all cells
 
 **Option 2: Local Jupyter Notebook**
 ```bash
-jupyter notebook notebooks/local_demo.ipynb
+jupyter notebook notebooks/demo_compliance_agent.ipynb
 ```
 
 **Option 3: Python Script**
@@ -184,7 +184,7 @@ Test Results:
 
 ## 🎥 Demo Video
 
-[Watch 3-minute demo on YouTube](https://youtube.com/your-video-link)
+Demo available in Kaggle notebooks and local Jupyter environment.
 
 ## 🤝 Contributing
 
@@ -208,9 +208,9 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file.
 
 ## 📧 Contact
 
-**Your Name** - [@yourtwitter](https://twitter.com/yourtwitter)
+**Praxc** - GitHub: [https://github.com/praxc](https://github.com/praxc)
 
-Project Link: [https://github.com/yourusername/ai-compliance-copilot](https://github.com/yourusername/ai-compliance-copilot)
+Project Link: [https://github.com/praxc/ai-enterprise-compliance-agent](https://github.com/praxc/ai-enterprise-compliance-agent)
 
 ---
 

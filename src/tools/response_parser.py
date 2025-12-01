@@ -29,7 +29,7 @@ def parse_compliance_response(response_text: str) -> Dict[str, Any]:
         "CRITICAL": r"(?:🔴|CRITICAL)[:\s]*(\d+)|(\d+)\s*(?:CRITICAL|critical)",
         "HIGH": r"(?:🟠|HIGH)[:\s]*(\d+)|(\d+)\s*(?:HIGH|high)",
         "MEDIUM": r"(?:🟡|MEDIUM)[:\s]*(\d+)|(\d+)\s*(?:MEDIUM|medium)",
-        "LOW": r"(?:🟢|LOW)[:\s](\d+)|(\d+)\s(?:LOW|low)"
+        "LOW": r"(?:🟢|LOW)[:\s]*(\d+)|(\d+)\s*(?:LOW|low)"
         }
 
     for severity, pattern in severity_patterns.items():

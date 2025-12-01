@@ -1,5 +1,5 @@
 """
-Tools for the compliance copilot system.
+Tools for the compliance Agent system.
 """
 
 from .pdf_ingestion import extract_text_from_pdf, parse_policy_structure

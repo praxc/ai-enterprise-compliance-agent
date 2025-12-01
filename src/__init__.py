@@ -1,12 +1,12 @@
 """
-AI Enterprise Compliance Copilot
+AI Enterprise Compliance Agent
 
 Multi-agent system for automated compliance checking and violation remediation.
 """
 
 __version__ = "1.0.0"
-__author__ = "Your Name"
-__email__ = "your.email@example.com"
+__author__ = "Praxc"
+__email__ = "praxc@github.com"
 
 from src.agents.orchestrator import create_orchestrator_agent
 from src.agents.policy_extractor import create_policy_extractor_agent

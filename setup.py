@@ -6,12 +6,12 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="ai-compliance-copilot",
     version="1.0.0",
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="Praxc",
+    author_email="praxc@github.com",
     description="Multi-agent AI system for automated compliance checking",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/ai-compliance-copilot",
+    url="https://github.com/praxc/ai-enterprise-compliance-agent",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",

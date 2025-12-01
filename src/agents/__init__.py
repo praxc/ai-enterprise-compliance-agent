@@ -1,5 +1,5 @@
 """
-Agent implementations for the compliance copilot system.
+Agent implementations for the compliance Agent system.
 """
 
 from .orchestrator import create_orchestrator_agent
