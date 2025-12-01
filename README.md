@@ -101,14 +101,74 @@ python scripts/run_evaluation.py \
 
 ## 📂 Repository Structure
 ```
-ai-compliance-copilot/
-├── src/agents/          # Multi-agent system components
-├── src/tools/           # PDF parsing, response parsing
-├── demo_data/           # Sample policies and test documents
-├── notebooks/           # Jupyter demos (Kaggle & local)
-├── tests/               # Unit tests and evaluation
-├── docs/                # Documentation and architecture
-└── scripts/             # Utility scripts
+ai-enterprise-compliance-agent/
+├── README.md                              # Project overview & quick start
+├── LICENSE                                # MIT License
+├── requirements.txt                       # Python dependencies
+├── setup.py                               # Package setup configuration
+├── CORRECTIONS_APPLIED.md                 # Change log for fixes
+├── NOTEBOOK_VALIDATION.md                 # Kaggle notebook validation report
+├── REPOSITORY_STRUCTURE.md                # This file
+│
+├── src/                                   # Main source code
+│   ├── __init__.py                        # Package exports
+│   │
+│   ├── agents/                            # Multi-agent implementations
+│   │   ├── __init__.py                    # Agent exports
+│   │   ├── orchestrator.py                # Orchestrator (coordinator agent)
+│   │   ├── policy_extractor.py            # Policy extraction specialist
+│   │   ├── document_scanner.py            # Document scanning specialist
+│   │   ├── violation_analyzer.py          # Violation analysis specialist
+│   │   └── rewrite_agent.py               # Compliance rewrite specialist
+│   │
+│   ├── tools/                             # Utility tools & parsers
+│   │   ├── __init__.py                    # Tool exports
+│   │   ├── pdf_ingestion.py               # PDF text extraction
+│   │   └── response_parser.py             # Agent response parsing
+│   │
+│   ├── exporter/                          # Report export functionality
+│   │   ├── __init__.py                    # Exporter exports
+│   │   ├── exporter.py                    # Main export orchestrator
+│   │   ├── html_template.py               # HTML report template
+│   │   └── pdf_generator.py               # PDF generation (reportlab)
+│   │
+│   └── utils/                             # Configuration & utilities
+│       ├── __init__.py                    # Utils exports
+│       └── config.py                      # API key loading & retry config
+│
+├── notebooks/                             # Jupyter notebooks
+│   ├── README.md                          # Notebook instructions
+│   ├── ai-enterprise-compliance-agent.ipynb  # Main Kaggle notebook
+│   └── demo_compliance_agent.ipynb        # Alternative demo notebook
+│
+├── scripts/                               # Standalone scripts
+│   ├── run_evaluation.py                  # Single document evaluation script
+│   └── export_results.py                  # Export compliance results to files
+│
+├── tests/                                 # Test suite
+│   ├── __init__.py                        # Test package
+│   ├── test_agents.py                     # Agent unit tests
+│   ├── test_tools.py                      # Tools unit tests
+│   └── evaluation.py                      # Evaluation harness
+│
+├── docs/                                  # Documentation
+│   ├── architecture.md                    # System architecture details
+│   ├── deployment.md                      # Deployment guides
+│   ├── api_reference.md                   # API reference
+│   └── images/                            # Documentation images
+│       └── README.md
+│
+└── demo_data/                             # Sample data for testing
+    ├── README.md                          # Demo data description
+    ├── acme_corporation_company_policy.txt # Sample policy document
+    ├── acme_doc_to_scan_proposal_for_new_feature.txt  # Sample document
+    ├── gold_labels.json                   # Ground truth for evaluation
+    └── test_documents/                    # Test dataset
+        ├── doc_001_critical.txt           # 4 CRITICAL violations
+        ├── doc_002_high.txt               # 4 HIGH violations
+        ├── doc_003_medium.txt             # 2 MEDIUM violations
+        ├── doc_004_mixed.txt              # 3 CRITICAL + 1 HIGH
+        └── doc_005_clean.txt              # Compliant document (0 violations)
 ```
 
 ## 🏗️ Architecture
